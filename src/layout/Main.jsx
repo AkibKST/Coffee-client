@@ -3,7 +3,7 @@ import Headers from "../components/Headers";
 
 const Main = () => {
     return (
-        <div>
+        <div className="font-rancho">
             <Headers></Headers>
             <Outlet></Outlet>
         </div>
