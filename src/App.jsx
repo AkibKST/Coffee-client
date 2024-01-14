@@ -13,6 +13,7 @@ import cup6 from './assets/images/cups/Rectangle 14.png';
 import cup7 from './assets/images/cups/Rectangle 15.png';
 import cup8 from './assets/images/cups/Rectangle 16.png';
 
+
 function App() {
 
   const loadedCoffees = useLoaderData();
