@@ -48,7 +48,7 @@ function App() {
           <br />
           <h1 className='text-4xl font-bold text-center'>Follow on Instagram</h1>
 
-          <div className='grid grid-cols-4 pt-10 gap-5'>
+          <div className='grid grid-cols-4 pt-10 gap-5 pb-20'>
             <img src={cup1} alt="" />
             <img src={cup2} alt="" />
             <img src={cup3} alt="" />
