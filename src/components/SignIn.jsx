@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { Link } from "react-router-dom";
 
 const SingIn = () => {
 
@@ -62,6 +63,9 @@ const SingIn = () => {
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
+                            </div>
+                            <div className="mt-9">
+                                <p>New to our website please <span className="hover:btn ml-10"><Link to="/signup">Register</Link></span></p>
                             </div>
                         </form>
                     </div>

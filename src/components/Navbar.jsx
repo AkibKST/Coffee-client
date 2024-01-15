@@ -31,7 +31,7 @@ const Navbar = () => {
                 <NavLink className="hover:btn" to={"/users"}>Users</NavLink>
                 <NavLink className="hover:btn" to={"/addCoffee"}>Add Coffee</NavLink>
                 <NavLink className="hover:btn" to={"/mycart"}>My Cart</NavLink>
-                <NavLink className="hover:btn" to={"/signup"}>Register</NavLink>
+                <div>
                 {
                     user ? <>
                     <span>{user?.email}</span>
@@ -41,9 +41,7 @@ const Navbar = () => {
                     <button className="btn btn-sm">Login</button>
                     </Link>
                 }
-               
-                
-
+                </div>
             </div>
         </div>
     );
