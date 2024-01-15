@@ -8,6 +8,8 @@ import App from '../App.jsx';
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import ErrorPage from '../components/ErrorPage.jsx';
+import MyCart from '../components/MyCart.jsx';
+import PrivateRoute from './PrivateRoute.jsx';
 
 const router = createBrowserRouter([
     {
@@ -22,7 +24,7 @@ const router = createBrowserRouter([
         },
         {
           path: "addCoffee",
-          element: <AddCoffee></AddCoffee>
+          element: <PrivateRoute><AddCoffee></AddCoffee></PrivateRoute>
         },
         {
           path: "updateCoffee/:id",
@@ -39,8 +41,12 @@ const router = createBrowserRouter([
         },
         {
           path: '/users',
-          element: <User></User>,
+          element: <PrivateRoute><User></User></PrivateRoute>,
           loader: () => fetch('http://localhost:5000/user')
+        },
+        {
+          path: '/mycart',
+          element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
         }
       ]
     }
